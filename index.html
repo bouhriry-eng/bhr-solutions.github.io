@@ -2,118 +2,149 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>BHR Solutions</title>
+  <title>BHR Solutions – Services à domicile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: url("camionnette.jpg") center/cover no-repeat;
+      color: white;
+      padding: 90px 20px;
       text-align: center;
     }
 
-    .hero {
-      background: url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover no-repeat;
-      padding: 90px 20px;
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .card {
-      background: rgba(0,0,0,0.75);
-      padding: 30px;
-      max-width: 650px;
+    header p {
+      font-size: 18px;
+      max-width: 700px;
       margin: auto;
-      border-radius: 14px;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 32px;
-    }
-
-    h2 {
-      margin-top: 35px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-      max-width: 420px;
-      margin: auto;
-    }
-
-    ul li {
-      padding: 8px 0;
-      font-size: 16px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 25px;
-      padding: 14px 26px;
+      padding: 15px 30px;
       background: #25d366;
-      color: #fff;
+      color: white;
       text-decoration: none;
-      border-radius: 30px;
       font-weight: bold;
-      font-size: 16px;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 20px;
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
       font-size: 14px;
-      background: #020617;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
-    <div class="card">
-      <h1>BHR Solutions</h1>
-      <p>Service rapide et professionnel<br>
-      📍 Belgique – Intervention rapide</p>
+<header>
+  <h1>BHR Solutions</h1>
+  <p>Services professionnels à domicile – rapide, sérieux et efficace</p>
+  <a class="btn" href="https://wa.me/32492796198">📞 Contact WhatsApp</a>
+</header>
 
-      <!-- FR -->
-      <h2>🇫🇷 Services</h2>
-      <ul>
-        <li>✔ Dépannage à domicile</li>
-        <li>✔ Petites réparations</li>
-        <li>✔ Plomberie</li>
-        <li>✔ Électricité</li>
-        <li>✔ Serrures</li>
-        <li>✔ Montage de meubles</li>
-        <li>✔ Déblayage et vide-grenier</li>
-        <li>✔ Jardinage professionnel</li>
-      </ul>
+<section class="grid">
 
-      <!-- NL -->
-      <h2>🇳🇱 Diensten</h2>
-      <ul>
-        <li>✔ Herstellingen aan huis</li>
-        <li>✔ Kleine reparaties</li>
-        <li>✔ Sanitair</li>
-        <li>✔ Elektriciteit</li>
-        <li>✔ Sloten</li>
-        <li>✔ Meubelmontage</li>
-        <li>✔ Ontruiming en leegmaken</li>
-        <li>✔ Professioneel tuinonderhoud</li>
-      </ul>
-
-      <a class="btn" href="https://wa.me/+32 492 79 61 98" target="_blank">
-        📞 Contact WhatsApp
-      </a>
-    </div>
+  <div class="card">
+    <h2>🇫🇷 Services</h2>
+    <ul>
+      <li>Dépannage à domicile</li>
+      <li>Petites réparations</li>
+      <li>Plomberie</li>
+      <li>Électricité</li>
+      <li>Serrurerie</li>
+      <li>Montage de meubles</li>
+      <li>Déblayage & vide grenier</li>
+      <li>Jardinage professionnel</li>
+    </ul>
   </div>
 
-  <footer>
-    © 2026 BHR Solutions – Tous droits réservés
-  </footer>
+  <div class="card">
+    <h2>🇳🇱 Diensten</h2>
+    <ul>
+      <li>Herstellingen aan huis</li>
+      <li>Kleine reparaties</li>
+      <li>Sanitair</li>
+      <li>Elektriciteit</li>
+      <li>Sloten</li>
+      <li>Meubelmontage</li>
+      <li>Ontruiming & opruiming</li>
+      <li>Professioneel tuinonderhoud</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Pourquoi BHR Solutions ?</h2>
+    <ul>
+      <li>✔ Intervention rapide</li>
+      <li>✔ Travail soigné</li>
+      <li>✔ Prix corrects</li>
+      <li>✔ Disponible 7j/7</li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 BHR Solutions – Tous droits réservés  
+  <br>📞 +32 492 79 61 98
+</footer>
 
 </body>
 </html>
-
