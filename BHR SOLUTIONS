@@ -9,44 +9,44 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      background: #f4f6f8;
+      color: #222;
       text-align: center;
     }
 
     header {
       background: #0b5ed7;
       color: white;
-      padding: 40px 20px;
+      padding: 30px 15px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 32px;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 18px;
+      font-size: 16px;
+      opacity: 0.95;
     }
 
-    .camionnette {
+    .hero img {
       width: 100%;
-      max-width: 900px;
-      margin: 30px auto;
+      max-width: 1000px;
+      margin: 20px auto;
       display: block;
       border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
     .btn {
       display: inline-block;
-      margin: 15px;
-      padding: 18px 30px;
+      margin: 15px 10px;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
       font-size: 18px;
       font-weight: bold;
-      text-decoration: none;
-      border-radius: 50px;
       color: white;
     }
 
@@ -60,10 +60,11 @@
 
     .section {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 30px auto;
       padding: 20px;
       background: white;
       border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
       text-align: left;
     }
 
@@ -84,9 +85,8 @@
     footer {
       margin-top: 40px;
       padding: 20px;
-      background: #222;
-      color: #ccc;
       font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
@@ -95,15 +95,15 @@
 
   <header>
     <h1>BHR Solutions</h1>
-    <p>Services professionnels à domicile – rapide, sérieux et efficace</p>
+    <p>Services professionnels à domicile — rapide, sérieux et efficace</p>
   </header>
 
-  <!-- IMAGE CAMIONNETTE -->
-  <img src="camionnette.PNG" alt="Camionnette BHR Solutions" class="camionnette">
+  <div class="hero">
+    <img src="camionnette.PNG" alt="Camionnette BHR Solutions">
+  </div>
 
-  <!-- BOUTONS CONTACT -->
   <a class="btn btn-whatsapp"
-     href="https://api.whatsapp.com/send?phone=32492796198"
+     href="https://wa.me/32492796198"
      target="_blank">
      📞 Contact WhatsApp
   </a>
@@ -113,7 +113,6 @@
      ✉️ Contact Email
   </a>
 
-  <!-- SERVICES FR -->
   <div class="section">
     <h2>🇫🇷 Services</h2>
     <ul>
@@ -127,7 +126,6 @@
     </ul>
   </div>
 
-  <!-- SERVICES NL -->
   <div class="section">
     <h2>🇳🇱 Diensten</h2>
     <ul>
@@ -142,8 +140,7 @@
   </div>
 
   <footer>
-    © 2026 – BHR Solutions<br>
-    📞 +32 492 79 61 98 • ✉️ BHRSOLUTIONS2025@outlook.com
+    © 2026 BHR Solutions — Tous droits réservés
   </footer>
 
 </body>
