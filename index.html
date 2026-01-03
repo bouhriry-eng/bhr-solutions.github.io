@@ -1,180 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>BHR Solutions – Dépannage à domicile</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>BHR Solutions – Dépannage 24/7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  color: #222;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
 
-/* HERO avec camionnette */
-.hero {
-  background: 
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url('camionnette.PNG') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-}
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(rgba(0, 80, 160, 0.65), rgba(0, 80, 160, 0.65)),
+        url("camionnette.PNG") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
 
-.hero p {
-  font-size: 17px;
-  line-height: 1.5;
-}
+    .hero p {
+      font-size: 18px;
+      margin: 6px 0;
+    }
 
-/* Boutons */
-.buttons {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
+    /* BUTTONS */
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-.btn {
-  padding: 14px 22px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-}
+    .btn {
+      padding: 14px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+    }
 
-.whatsapp {
-  background: #25D366;
-  color: white;
-}
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
 
-.email {
-  background: #444;
-  color: white;
-}
+    .btn-mail {
+      background: #444;
+      color: white;
+    }
 
-/* Sections */
-.section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    /* SECTIONS */
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.section h2 {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 25px;
-}
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
 
-/* Services */
-.services {
-  background: white;
-  border-radius: 18px;
-  padding: 25px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
+    /* SERVICES */
+    .services {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+    }
 
-.services ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-.services li {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 17px;
-}
+    .services li {
+      font-size: 18px;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
 
-.services li:last-child {
-  border-bottom: none;
-}
+    .services li:last-child {
+      border-bottom: none;
+    }
 
-/* Galerie photos */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-}
+    /* ABOUT */
+    .about {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      line-height: 1.7;
+    }
 
-.gallery img {
-  width: 100%;
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+    }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 14px;
-  color: #666;
-}
-</style>
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0a3d7a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>BHR Solutions</h1>
-  <p>
-    Dépannage & services à domicile — <strong>24h/24 • 7j/7</strong><br>
-    Herstellingen & diensten aan huis — <strong>24/7</strong>
-  </p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>BHR Solutions</h1>
 
-  <div class="buttons">
-    <a class="btn whatsapp" href="https://wa.me/32476289350" target="_blank">
-      WhatsApp 1
-    </a>
+    <p><strong>Dépannage & services à domicile</strong> — 24h/24 • 7j/7</p>
+    <p><strong>Herstellingen & diensten aan huis</strong> — 24/7</p>
 
-    <a class="btn whatsapp" href="https://wa.me/32492796198" target="_blank">
-      WhatsApp 2
-    </a>
+    <div class="buttons">
+      <a class="btn btn-whatsapp" href="https://wa.me/32476289350" target="_blank">
+        WhatsApp
+      </a>
 
-    <a class="btn email" href="mailto:BHRSOLUTIONS2025@outlook.com">
-      Email
-    </a>
+      <a class="btn btn-whatsapp" href="https://wa.me/32492796198" target="_blank">
+        WhatsApp
+      </a>
+
+      <a class="btn btn-mail" href="mailto:BHRSOLUTIONS2025@outlook.com">
+        Email
+      </a>
+    </div>
   </div>
-</div>
 
-<!-- SERVICES -->
-<section class="section">
-  <h2>Nos services</h2>
-  <div class="services">
-    <ul>
-      <li>✔ Dépannage à domicile</li>
-      <li>✔ Électricité</li>
-      <li>✔ Plomberie</li>
-      <li>✔ Réparations urgentes</li>
-      <li>✔ Installations & rénovations</li>
-      <li>✔ Vide maison & déblayage</li>
-      <li>✔ Jardinage & entretien extérieur</li>
-      <li>✔ Intervention rapide 24h/24 – 7j/7</li>
-    </ul>
+  <!-- SERVICES -->
+  <div class="section">
+    <h2>Nos services / Onze diensten</h2>
+
+    <div class="services">
+      <ul>
+        <li>✔ Dépannage à domicile</li>
+        <li>✔ Électricité</li>
+        <li>✔ Plomberie</li>
+        <li>✔ Petites réparations</li>
+        <li>✔ Installations & rénovations</li>
+        <li>✔ Déblayage & vide grenier</li>
+        <li>✔ Jardinage</li>
+        <li>✔ Interventions rapides</li>
+      </ul>
+
+      <hr style="margin:30px 0">
+
+      <ul>
+        <li>✔ Herstellingen aan huis</li>
+        <li>✔ Elektriciteit</li>
+        <li>✔ Loodgieterij</li>
+        <li>✔ Kleine herstellingen</li>
+        <li>✔ Installaties & renovaties</li>
+        <li>✔ Ontruiming & leegmaken</li>
+        <li>✔ Tuinonderhoud</li>
+        <li>✔ Snelle interventies</li>
+      </ul>
+    </div>
   </div>
-</section>
 
-<!-- INTERVENTIONS -->
-<section class="section">
-  <h2>Nos interventions</h2>
-  <div class="gallery">
-    <img src="intervention1.PNG" alt="Intervention BHR Solutions">
-    <img src="intervention2.PNG" alt="Intervention BHR Solutions">
-    <img src="intervention3.PNG" alt="Intervention BHR Solutions">
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>Qui sommes-nous / Wie zijn wij</h2>
+
+    <div class="about">
+      <p>
+        <strong>BHR Solutions</strong> est une entreprise spécialisée dans les services
+        et dépannages à domicile. Nous intervenons rapidement avec sérieux et professionnalisme,
+        24h/24 et 7j/7.
+      </p>
+
+      <p>
+        <strong>BHR Solutions</strong> is een bedrijf gespecialiseerd in herstellingen
+        en diensten aan huis. Wij bieden een snelle, betrouwbare en professionele service,
+        24/7 beschikbaar.
+      </p>
+    </div>
   </div>
-</section>
 
-<footer>
-  © 2026 BHR Solutions — Tous droits réservés
-</footer>
+  <!-- INTERVENTIONS -->
+  <div class="section">
+    <h2>Nos interventions / Onze interventies</h2>
+
+    <div class="gallery">
+      <img src="intervention1.PNG" alt="Intervention BHR Solutions">
+      <img src="intervention2.PNG" alt="Intervention BHR Solutions">
+      <img src="intervention3.PNG" alt="Intervention BHR Solutions">
+    </div>
+  </div>
+
+  <footer>
+    © 2026 BHR Solutions — Tous droits réservés
+  </footer>
 
 </body>
 </html>
